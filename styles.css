@@ -4,3 +4,55 @@
 a {
     color: red
 }
+
+.jumbotron {
+    background-image: url("HansZimmer.jpg");
+    background-size: cover;
+}
+.fade-in-jumbotron {
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+.card-top {
+    position: relative;
+}
+
+.favourite-albums-cards {
+    min-height: 400px;
+    max-height: 400px;
+}
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+.card-no-border {
+    border: 0;
+}
+.badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+tr:nth-child(even) {
+    background: yellow
+}
+.btn-custom:hover {
+    border: 3px solid;
+    box-shadow: 200px, 200px, 10px, 10px #888888;
+}
+
+.btn-delete-row {
+    visibility: hidden;
+}
+
+tr:hover .btn-delete-row {
+    visibility: visible;
+}
